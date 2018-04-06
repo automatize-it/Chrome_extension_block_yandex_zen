@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "Hide yandex zen",
+	"version": "0.2",
+	"icons": {
+		"16": "yandex_zen_stop_16x16.png",
+		"48": "yandex_zen_stop_48x48.png"
+	},
+	"permissions": [
+		"tabs",
+		"<all_urls>",
+		"webRequest",
+        "webRequestBlocking"
+	],
+	"background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    },
+	"browser_action": {
+		"default_title": "Hide Yandex Zen",
+		"default_icon": "yandex_zen_stop_48x48.png",
+		"default_popup" : "popup.html"
+	},
+	"content_scripts": [
+    {
+      "matches": [ "https://*/*", "http://*/*" ],
+	  "js": [ "jquery.js", "client.js" ], //
+	  "run_at": "document_end"
+    }
+	]
+}
