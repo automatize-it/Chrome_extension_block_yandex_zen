@@ -1,7 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "Hide yandex zen",
-	"version": "0.2",
+	"name": "Block Yandex Zen",
+	"version": "1.0",
+	"author": "Automatize-IT",
+	"description": "Block Yandex Zen from loading and-or showning on sites",
 	"icons": {
 		"16": "yandex_zen_stop_16x16.png",
 		"48": "yandex_zen_stop_48x48.png"
